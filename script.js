@@ -10,7 +10,9 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
     document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-    mobileNav.classList.add('hidden');
+    if (!mobileNav.classList.contains('hidden')) {
+      mobileNav.classList.add('hidden');
+    }
   });
 });
 
@@ -24,18 +26,23 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal').forEach(el => {
+  observer.observe(el);
+});
 
-// Dark mode toggle & persistence
+// Dark/Light mode toggle and persistence
 const themeToggle = document.getElementById('theme-toggle');
 themeToggle.addEventListener('click', () => {
   document.documentElement.classList.toggle('dark');
   localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
 });
 
+// On load: set theme
 if (
   localStorage.theme === 'dark' ||
   (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
 ) {
   document.documentElement.classList.add('dark');
+} else {
+  document.documentElement.classList.remove('dark');
 }

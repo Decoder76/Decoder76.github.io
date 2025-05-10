@@ -1,6 +1,6 @@
 <!-- File: index.html -->
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,27 +10,17 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.7/dist/tailwind.min.css" rel="stylesheet" />
   <!-- Custom Styles -->
   <link href="styles.css" rel="stylesheet" />
-  <!-- JSON-LD structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Lokesh Kumar Jayswal",
-    "url": "https://decoder76.github.io/",
-    "sameAs": ["https://www.linkedin.com/in/lokesh"],
-    "jobTitle": "Software Developer & Red Teaming Enthusiast"
-  }
-  </script>
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
-
-  <!-- Sticky Header -->
-  <header class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md transition-all z-50">
+  <!-- Header -->
+  <header class="fixed w-full bg-white dark:bg-gray-800 shadow-md transition-all z-50">
     <div class="container mx-auto flex items-center justify-between p-4">
-      <a href="#about" class="text-2xl font-bold">Lokesh</a>
+      <a href="#" class="text-2xl font-bold">Lokesh</a>
       <div class="flex items-center space-x-4">
-        <button id="theme-toggle" aria-label="Toggle Theme" class="text-xl">🌓</button>
-        <button id="menu-btn" class="md:hidden text-2xl" aria-label="Open Menu">☰</button>
+        <button id="theme-toggle" aria-label="Toggle Theme" class="p-2 rounded-lg focus:outline-none">
+          🌓
+        </button>
+        <button id="menu-btn" class="md:hidden p-2 rounded-lg focus:outline-none" aria-label="Open Menu">☰</button>
       </div>
       <nav id="mobile-nav" class="hidden md:flex space-x-6">
         <a href="#about" class="hover:text-blue-600">About</a>
@@ -41,35 +31,35 @@
   </header>
 
   <!-- Main Content -->
-  <main class="pt-24">
+  <main class="pt-20 container mx-auto">
     <!-- About Section -->
-    <section id="about" class="reveal container mx-auto py-16 px-4">
+    <section id="about" class="reveal py-12">
       <h1 class="mb-4">About Me</h1>
-      <p class="max-w-2xl">IT graduate with 8 months of hands-on development experience and a passion for red teaming and cybersecurity.</p>
+      <p>IT graduate with 8 months of hands-on development and red teaming passion.</p>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="reveal container mx-auto py-16 px-4">
+    <section id="projects" class="reveal py-12">
       <h2 class="mb-6">Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Project Card 1 -->
-        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 transform hover:-translate-y-1 hover:shadow-xl transition">
+        <!-- Project Card Example -->
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:-translate-y-1 hover:shadow-xl transform transition">
           <h3 class="text-xl font-semibold mb-2">College Social Network</h3>
-          <p>A full-stack Rails app featuring real-time chat, notifications, and secure authentication.</p>
+          <p>A Rails-based social networking app with real-time chat and secure auth.</p>
         </div>
-        <!-- Project Card 2 -->
-        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 transform hover:-translate-y-1 hover:shadow-xl transition">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:-translate-y-1 hover:shadow-xl transform transition">
           <h3 class="text-xl font-semibold mb-2">Vulnerability Scanner Script</h3>
-          <p>Python script for network scanning, live host detection, and basic port scanning with logging.</p>
+          <p>Python script that scans local networks, identifies hosts, and logs ports.</p>
         </div>
+        <!-- Add more cards as needed -->
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="reveal container mx-auto py-16 px-4">
-      <h2 class="mb-6">Contact</h2>
-      <p>Email: <a href="mailto:mail@lokesh.com" class="text-blue-600 hover:underline">mail@lokesh.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/lokesh" class="text-blue-600 hover:underline">/in/lokesh</a></p>
+    <section id="contact" class="reveal py-12">
+      <h2 class="mb-4">Contact</h2>
+      <p>Email: <a href="mailto:mail@lokesh.com" class="text-blue-600">mail@lokesh.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/lokesh" class="text-blue-600" target="_blank">linkedin.com/in/lokesh</a></p>
     </section>
   </main>
 
