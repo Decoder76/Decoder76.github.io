@@ -1,47 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lokesh Kumar Jayswal - Resume</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
-        h1, h2 { color: #2c3e50; }
-        h1 { font-size: 2em; margin-bottom: 0; }
-        h2 { margin-top: 1.5em; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
-        .contact { margin-bottom: 20px; }
-        ul { list-style: disc; margin-left: 20px; }
-        .section { margin-top: 20px; }
-    </style>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
     <nav id="menu">
-        <ul style="display: flex; gap: 10px; list-style: none; padding: 0;">
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#summary">Summary</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+        <ul class="flex gap-4 list-none p-0">
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+            <li><a href="#summary" class="hover:underline">Summary</a></li>
+            <li><a href="#skills" class="hover:underline">Skills</a></li>
+            <li><a href="#experience" class="hover:underline">Experience</a></li>
+            <li><a href="#projects" class="hover:underline">Projects</a></li>
+            <li><a href="#education" class="hover:underline">Education</a></li>
+            <li><a href="#certifications" class="hover:underline">Certifications</a></li>
         </ul>
     </nav>
-    <h1>Lokesh Kumar Jayswal</h1>
+
+    <h1 class="text-4xl lg:text-5xl font-bold tracking-tight">Lokesh Kumar Jayswal</h1>
     <div class="contact">
         <p>📧 email@example.com | 📞 +91-999-999-9999</p>
-        <p>🔗 <a href="https://linkedin.com/in/lokesh-k-792389195">LinkedIn</a> |
-           💻 <a href="https://github.com/Decoder76">GitHub</a></p>
+        <p>🔗 <a href="https://linkedin.com/in/lokesh-k-792389195" class="text-blue-600 hover:underline">LinkedIn</a> |
+            💻 <a href="https://github.com/Decoder76" class="text-blue-600 hover:underline">GitHub</a></p>
     </div>
 
-    <div class="section">
-        <h2>Professional Summary</h2>
-        <p>Motivated IT graduate with 8 months of professional experience as a Software Developer and foundational knowledge in
-        server systems and virtualization. Hands-on with Linux-based environments via WSL, VMware, and VirtualBox. Enthusiastic about server-side infrastructure, automation, and pursuing a career in system administration and cybersecurity.</p>
+    <div class="section reveal">
+        <h2 class="text-3xl font-semibold">Professional Summary</h2>
+        <p>Motivated IT graduate with 8 months of professional experience as a Software Developer and foundational
+            knowledge in server systems and virtualization. Hands-on with Linux-based environments via WSL, VMware,
+            and VirtualBox. Enthusiastic about server-side infrastructure, automation, and pursuing a career...</p>
     </div>
 
-    <div class="section">
-        <h2>Technical Skills</h2>
-        <ul>
+    <div class="section reveal">
+        <h2 class="text-3xl font-semibold">Technical Skills</h2>
+        <ul class="list-disc ml-8">
             <li>Operating Systems: Linux (Ubuntu, Kali), Windows 10/11, MacOSX</li>
             <li>Virtualization: WSL, VirtualBox, VMware Workstation</li>
             <li>Languages: Ruby, Python (Basics), Bash</li>
@@ -53,10 +48,10 @@
         </ul>
     </div>
 
-    <div class="section">
-        <h2>Work Experience</h2>
-        <h3>Software Developer – Octascale Technologies, India (July 2023 – October 2024)</h3>
-        <ul>
+    <div class="section reveal">
+        <h2 class="text-3xl font-semibold">Work Experience</h2>
+        <h3 class="font-bold">Software Developer – Octascale Technologies, India (July 2023 – October 2024)</h3>
+        <ul class="list-disc ml-8">
             <li>Developed backend systems using Ruby on Rails and PostgreSQL.</li>
             <li>Collaborated in deployment and maintenance of web applications on Linux servers.</li>
             <li>Assisted DevOps with basic Linux system setup, testing, and automation scripts.</li>
@@ -64,32 +59,32 @@
         </ul>
     </div>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <h3>Linux Server Virtualization Lab (Self Project)</h3>
-        <ul>
+    <div class="section reveal">
+        <h2 class="text-3xl font-semibold">Projects</h2>
+        <h3 class="font-bold">Linux Server Virtualization Lab (Self Project)</h3>
+        <ul class="list-disc ml-8">
             <li>Installed and configured Ubuntu and Kali Linux through WSL on Windows.</li>
             <li>Set up VirtualBox and VMware Workstation to simulate multi-node environments.</li>
             <li>Practiced server configuration, SSH access, system monitoring, and user management.</li>
         </ul>
-        <h3>College Social Network (Web App)</h3>
-        <ul>
+        <h3 class="font-bold">College Social Network (Web App)</h3>
+        <ul class="list-disc ml-8">
             <li>Created a social networking prototype using Rails, PostgreSQL, Devise, and ActionCable.</li>
             <li>Implemented real-time features and interactive UI with Bootstrap and WebSockets.</li>
             <li>Designed database schema to manage user data, posts, comments, and messaging.</li>
         </ul>
     </div>
 
-    <div class="section">
-        <h2>Education</h2>
+    <div class="section reveal">
+        <h2 class="text-3xl font-semibold">Education</h2>
         <p>Bachelor of Technology (B.Tech) – Information Technology<br>
-        DR. APJ ABDUL KALAM TECHNICAL UNIVERSITY, LUCKNOW, UTTAR PRADESH<br>
-        <strong>Graduated:</strong> 2023</p>
+            DR. APJ ABDUL KALAM TECHNICAL UNIVERSITY, LUCKNOW, UTTAR PRADESH<br>
+            <strong>Graduated:</strong> 2023</p>
     </div>
 
-    <div class="section">
-        <h2>Certifications</h2>
-        <ul>
+    <div class="section reveal">
+        <h2 class="text-3xl font-semibold">Certifications</h2>
+        <ul class="list-disc ml-8">
             <li>Google Cybersecurity Certificate – Coursera (Completed)</li>
             <li>Linux Essentials – Cisco Networking Academy (In Progress)</li>
             <li>Prompt Engineering course – DeepLearning (In Progress)</li>
