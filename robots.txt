@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Decoder76.github.io/sitemap.xml
+Sitemap: https://Decoder76.github.io/al-folio/sitemap.xml
